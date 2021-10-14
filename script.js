@@ -18,20 +18,24 @@ fetch(url)
         let names = document.querySelectorAll("#select-movie")
         /////Movie Description //// 
 
-
+        console.log(names)
         select.addEventListener("change",(e)=>{
-            console.log(e.target.value);
+            selectedMovie = e.target.value;
+            select = "";
             let container = document.querySelector("#display-info-container");
             let movieTitle = document.createElement("h3");
             let year = document.createElement("p");
             let description = document.createElement("p")
+            
+            movieTitle.textContent = e.target.value;
 
             for(let movie of movies){
-            movieTitle.textContent = e.target.value;
-            year.textContent = movie.release_date;
-            description.textContent = movie.description;
-           }
-        container.append(movieTitle, year, description)
+                if(selectedMovie === movie.title){
+                    year.textContent = movie.release_date;
+                    description.textContent = movie.description;
+                }
+            }
+            container.append(movieTitle, year, description)
         })
         ///////////
     }).catch((err)=>{
