@@ -15,14 +15,12 @@ fetch(url)
             select.append(newOption);
             /////// ///////
         }
-        let names = document.querySelectorAll("#select-movie")
-        /////Movie Description //// 
 
-        console.log(names)
+        /////Movie Description //// 
         select.addEventListener("change",(e)=>{
             selectedMovie = e.target.value;
-            select = "";
             let container = document.querySelector("#display-info-container");
+            container.textContent = "";
             let movieTitle = document.createElement("h3");
             let year = document.createElement("p");
             let description = document.createElement("p")
@@ -35,9 +33,12 @@ fetch(url)
                     description.textContent = movie.description;
                 }
             }
-            container.append(movieTitle, year, description)
+            container.append(movieTitle, year, description);
         })
-        ///////////
+
+        /////////// Review ///////
+
+
     }).catch((err)=>{
         console.log(err)
     })
