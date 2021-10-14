@@ -10,10 +10,6 @@ body{
     grid-gap: 1em;
 }
 
-body > *{
-/* border: 1px solid black; */
-}
-
 #header-container{
     padding: 20px;
     margin: 20px;
@@ -36,14 +32,11 @@ body > *{
 
 #select-movie-container{
     grid-area: select;
-    margin-left: 20%;
+    margin-left: 15%;
 }
 
 #select-movie{
     font-family: monospace;
-}
-
-#display-info-container{
 }
 
 #display-info{
