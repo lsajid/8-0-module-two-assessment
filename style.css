@@ -7,7 +7,7 @@ body{
     "form form form"
     "list list list";
     background-color: lavender;
-    grid-gap: 2em;
+    grid-gap: 1em;
 }
 
 body > *{
@@ -44,13 +44,14 @@ body > *{
 }
 
 #display-info-container{
-    grid-area: display;
 }
 
 #display-info{
     font-family: monospace;
     /* /* padding:10px; */
-    margin: 0px;
+    margin: 10px;
+    padding: 20px;
+    grid-area: display;
 }
 
 #display-info-container > * {
