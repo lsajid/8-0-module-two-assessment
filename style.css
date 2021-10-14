@@ -7,7 +7,7 @@ body{
     "form form form"
     "list list list";
     background-color: lavender;
-    grid-gap: 1em;
+    grid-gap: 2em;
 }
 
 body > *{
@@ -38,6 +38,7 @@ body > *{
     grid-area: select;
     margin-left: 20%;
 }
+
 #select-movie{
     font-family: monospace;
 }
