@@ -45,7 +45,6 @@ body > *{
 
 #display-info-container{
     grid-area: display;
-    display: flex;
 }
 
 #display-info{
