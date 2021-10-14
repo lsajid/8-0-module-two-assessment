@@ -51,11 +51,6 @@ body{
     font-family: monospace;
 }
 
-#display-info-container div{
-    padding-top: 10px;
-    margin-left: 20px;
-}
-
 form{
     padding: 10px;
     font-family: monospace;
