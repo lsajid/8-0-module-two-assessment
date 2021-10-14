@@ -34,11 +34,26 @@ fetch(url)
                 }
             }
             container.append(movieTitle, year, description);
+        /////// ///////
         })
 
         /////////// Review ///////
+        let form = document.querySelector("form");
 
+        form.addEventListener("submit", (event)=>{
+            event.preventDefault();
 
+            let input = document.querySelector("#input");
+            let li = document.createElement("li");
+            let ul = document.querySelector("ul");
+            let bold = document.createElement("strong");
+            bold.textContent = `${select.value}: `
+            li.innerHTML = input.value;
+            li.prepend(bold);
+            ul.append(li)
+            event.target.reset(); 
+        })
+        ////// ///////
     }).catch((err)=>{
         console.log(err)
     })
