@@ -19,7 +19,7 @@ fetch(url)
         /////Movie Description //// 
         select.addEventListener("change",(e)=>{
             selectedMovie = e.target.value;
-            let container = document.querySelector("#display-info-container");
+            let container = document.querySelector("#display-info");
             container.textContent = "";
             let movieTitle = document.createElement("h3");
             let year = document.createElement("p");
